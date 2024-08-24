@@ -1,0 +1,106 @@
+$color-primary: #6C5752;
+$color-secondary: #CBB9B5;
+$color-pale: #E9E2EE;
+$color-mid: #9D8D8C;
+$color-dark: #221C1C;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #64A489;
+$body-font: "Josefin Sans", sans-serif; 
+$header-font: "1989", cursive;
+
+@font-face{
+    font-family: '1989';
+    src: url("../media/permanentmarker-regular-webfont.woff2");
+}
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-primary;
+    background-color: #b5834e54;
+}
+
+header {
+    h2 {
+        color: $color-pale;
+    }
+}
+
+footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.accordion-button {
+    background-color: #d3d3d3;
+  }
+
+  .navbar {
+    background-color: $color-mid;
+}
+
+.carousel {
+    border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+card-header {
+    color: #b5834e;
+}
+
+#reservebtn {
+    background-color: #b5834e54;
+}
+
+a:link {
+    color: #664725; 
+}
+
+a:hover{
+    color: #926739;
+}
+
+tr {
+    background-color: #b5834e;
+    color: #664725; 
+}
+
+button {
+    background-color: #573e24
+}
+
+.fa-phone, .fa-envelope{
+    color: #664725; 
+}
+
+.bg-primary, text-primary{
+    background-color: #b5834e;
+}
+
+.fa-solid{
+    color:#573e24
+}
+
+@import 'modal';
+@import 'review-section';
